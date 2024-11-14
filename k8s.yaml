@@ -16,7 +16,7 @@ spec:
         - name: githubactionsdemo
           image: 850995558598.dkr.ecr.us-east-2.amazonaws.com/springboot-eks:1.1
           ports:
-            - containerPort: 8080
+            - containerPort: 8282
 
 ---
 apiVersion: v1
@@ -29,5 +29,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
+      targetPort: 8282
   type: LoadBalancer
